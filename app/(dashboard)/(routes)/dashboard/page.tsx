@@ -32,7 +32,7 @@ import RecommendedJobList from "../../_components/recommended-jobs"
            Find your favourite jobs here
          </h2>
 
-         <p className="text-2xl text-primary-foreground">
+         <p className="text-2xl text-neutral-600">
            {jobs.length} + jobs for you to explore{" "}
          </p>
        </Box>
