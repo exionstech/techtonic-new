@@ -36,7 +36,7 @@ const savedJobsPage = async ({searchParams} : SearchProps) => {
         <CustomBreadCrumb breadCrumbPage="Saved Jobs"/>
       </Box>
 
-      <Box className="w-full h-44 bg-blue-600/20 justify-center font-bold">
+      <Box className="w-full h-44 bg-blue-600/20 text-white justify-center font-bold">
         Saved Jobs
       </Box>
 
