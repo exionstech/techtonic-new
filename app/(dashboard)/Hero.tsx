@@ -4,7 +4,9 @@ import { RiArrowRightLine } from "react-icons/ri";
 
 const Hero = () => {
   return (
-    <Stack
+    <div>
+      {/* <Navbar/> */}
+       <Stack
       position="relative"
       maxW="container.md"
       pt="32"
@@ -78,6 +80,8 @@ const Hero = () => {
         filter="blur(90px)"
       />
     </Stack>
+    </div>
+   
   );
 };
 

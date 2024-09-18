@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './_components/navbar'
 import Sidebar from './_components/sidebar'
 import { Inter } from "next/font/google";
 
@@ -18,6 +17,7 @@ const DashboardLayout = ({children}: {children: React.ReactNode}) => {
         <Sidebar/>
       </div> */}
 
+      
       
       <div className='bg-gray-900 dark !scroll-smooth'>
     
