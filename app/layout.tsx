@@ -26,6 +26,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <Navbar/>
         {children}
+        
         <ToastProvider/>
       </body>
       </Providers>

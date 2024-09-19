@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidebar from './_components/sidebar'
 import { Inter } from "next/font/google";
+import Opportunity from '@/components/Opportunity/Opportunity';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ const DashboardLayout = ({children}: {children: React.ReactNode}) => {
     
       <main className={`${inter.className} h-full dark:bg-gray-900 dark:text-white`} >
         {children}
+        <Opportunity/>
       </main>
       </div>
 
