@@ -5,18 +5,23 @@ import { Box, Container, Flex, Stack, Text, VStack } from "@chakra-ui/react";
 import Image from "next/image";
 import logo from "/public/logo.png";
 import { Link } from "../utility/Link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const homepage = pathname === "/";
   return (
     <VStack
       alignItems="center"
       spacing="5"
-      borderTop="1px"
+      borderTop={homepage ? "1px" : "0"}
       borderColor={"gray.700"}
       mt="12"
       py="5"
     >
-      <Box bg={"dark"} color={"dark"} py={5} mt={30}>
+      <Box 
+       display={homepage ? "block" : "none"}
+      bg={"dark"} color={"dark"} py={5} mt={30}>
         <Container
           as={Stack}
           maxW={"6xl"}
