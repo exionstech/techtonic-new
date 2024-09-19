@@ -10,7 +10,6 @@ const Wrapper = ({
       
       <Container maxW="8xl" mx="auto" px={{ base: "4", lg: "6" }}>
         <Box pt="8">{children}</Box>
-        
       </Container>
     </Box>
   );
