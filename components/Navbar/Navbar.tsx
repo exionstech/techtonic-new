@@ -11,10 +11,11 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   const homepage = pathname === "/";
+  const aboutpage = pathname === "/about";
   return (
 
     <Box
-      display={homepage ? "block" : "none"}
+      display={homepage || aboutpage ? "block" : "none"}
       backdropFilter="auto"
       backdropContrast="85%"
       backdropBlur="20px"

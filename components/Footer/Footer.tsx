@@ -10,17 +10,22 @@ import { usePathname } from "next/navigation";
 export default function Footer() {
   const pathname = usePathname();
   const homepage = pathname === "/";
+  const aboutpage = pathname === "/about";
+  
+  console.log("Current pathname:", pathname);
+  console.log("Is homepage:", homepage);
+  console.log("Is aboutpage:", aboutpage);
   return (
     <VStack
       alignItems="center"
       spacing="5"
-      borderTop={homepage ? "1px" : "0"}
+      borderTop={homepage || aboutpage ? "1px" : "0"}
       borderColor={"gray.700"}
-      mt="12"
+      mt="0"
       py="5"
     >
       <Box 
-       display={homepage ? "block" : "none"}
+       display={homepage ||aboutpage  ? "block" : "none"}
       bg={"dark"} color={"dark"} py={5} mt={30}>
         <Container
           as={Stack}

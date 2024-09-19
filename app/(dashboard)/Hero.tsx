@@ -5,7 +5,7 @@ import { RiArrowRightLine } from "react-icons/ri";
 const Hero = () => {
   return (
     <div>
-      {/* <Navbar/> */}
+      
        <Stack
       position="relative"
       maxW="container.md"

@@ -26,7 +26,7 @@ const DashboardLayout = ({children}: {children: React.ReactNode}) => {
       <main className={`${inter.className} h-full dark:bg-gray-900 dark:text-white`} >
         {children}
         <Opportunity/>
-        <Footer/>
+        {/* <Footer/> */}
       </main>
       </div>
 
