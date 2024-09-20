@@ -19,16 +19,16 @@ const MobileNav = () => {
         icon={<RxHamburgerMenu />}
         variant="outline"
       />
-      <MenuList>
+      <MenuList bg="gray.900">
         {data.map((data, index) => (
           <Link href={data.path} key={index}>
-            <MenuItem>{data.title}</MenuItem>
+            <MenuItem bg="dark">{data.title}</MenuItem>
           </Link>
         ))}
-        <Divider orientation="horizontal" />
+        {/* <Divider  orientation="horizontal" /> */}
         {navsocial.map((data, index) => (
           <Link href={data.path} key={index}>
-            <MenuItem>Join {data.title}</MenuItem>
+            <MenuItem bg="dark">Join {data.title}</MenuItem>
           </Link>
         ))}
       </MenuList>
