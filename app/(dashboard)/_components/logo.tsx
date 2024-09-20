@@ -4,10 +4,10 @@ import React from 'react'
 const Logo = () => {
   return (
     <Image
-    src={'/img/logo.svg'}
+    src='/logo.png'
     alt='logo'
-    width={60}
-    height={60}
+    width={100}
+    height={100}
     className='cursor-pointer'
     />
   )
