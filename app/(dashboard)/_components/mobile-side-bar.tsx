@@ -10,9 +10,11 @@ import Sidebar from "./sidebar"
 
 const MobileSideBar = () => {
   return (
-    <Sheet>
-  <SheetTrigger className="md:hidden pr-4 hover:opacity-75 transition"><Menu/></SheetTrigger>
-  <SheetContent className="bg-white p-8" side="left">
+    <Sheet >
+  <SheetTrigger className="md:hidden pr-4 hover:opacity-75 transition">
+    <Menu/>
+    </SheetTrigger>
+  <SheetContent className="dark p-0 " side="left">
     <Sidebar/>
   </SheetContent>
 </Sheet>
