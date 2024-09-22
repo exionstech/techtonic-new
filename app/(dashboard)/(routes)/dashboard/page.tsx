@@ -43,7 +43,7 @@ import RecommendedJobList from "../../_components/recommended-jobs"
          src="/img/job-portal-banner.jpg"
          alt="Home Banner"
          fill
-         className="object-cover w-full h-full"
+         className="object-contain w-full h-full"
          />
        </Box>
 

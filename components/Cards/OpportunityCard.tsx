@@ -20,6 +20,7 @@ const OpportunityCard = () => {
       }
       borderRadius="lg"
       key="da"
+      textAlign="center" // Aligns text inside the box
     >
       <Box
         position="absolute"
@@ -27,8 +28,8 @@ const OpportunityCard = () => {
         bgColor={"gray.800"}
         borderRadius="inherit"
       />
-      <Stack position="relative" p="6" spacing="4">
-        <Flex>
+      <Stack position="relative" p="6" spacing="4" align="center"> {/* Center align stack items */}
+        <Flex justifyContent="center" width="100%"> {/* Centers heading and code inside flex */}
           <Heading fontSize="lg" color={"gray.200"}>
             Job Title
           </Heading>
@@ -45,6 +46,7 @@ const OpportunityCard = () => {
           colorScheme="gray"
           color="white"
           _hover={{ colorScheme: "black" }}
+          alignSelf="center" // Center align button
         >
           <Link href="/opportunities">Apply Now</Link>
         </Button>

@@ -63,7 +63,7 @@ export default function Footer() {
             justify={{ base: "center", md: "space-between" }}
             align={{ base: "center", md: "center" }}
           >
-            <Text>© 2024 TechTonic Community.</Text>
+            <Text color="white">© 2024 TechTonic Community.</Text>
             <Stack direction={"row"} spacing={6}>
               <Socials />
             </Stack>
