@@ -86,7 +86,7 @@ const JobCardItem = ({ job, userId }: JobCardItemProps) => {
     return (
         <motion.div layout>
             <Card>
-                <div className="w-full h-full flex flex-col items-start justify-start gap-y-4 p-4">
+                <div className="w-auto h-auto flex flex-col items-start justify-start gap-y-4 p-4">
                     <Box className="">
                         <p className="text-sm text-muted-foreground">{formatDistanceToNow(new Date(job.createdAt), { addSuffix: true })}</p>
                         <Button 

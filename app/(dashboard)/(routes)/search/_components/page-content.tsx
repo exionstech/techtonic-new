@@ -31,7 +31,7 @@ const PageContent = ({jobs, userId}:PageContentProps) => {
   return (
     <div className="pt-6">
         <AnimatePresence>
-          <motion.div {...fadeInOut} initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} layout className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-6 gap-2">
+          <motion.div {...fadeInOut} initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} layout className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-2">
             {jobs.map(job => (
               <JobCardItem key={job.id} job={job} userId={userId}/>
             ))}
